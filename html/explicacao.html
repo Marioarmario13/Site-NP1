@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explicação Detalhada dos Circuitos Elétricos</title>
+    <link rel="stylesheet" href="/SitesFísica/css/explicacao.css">
+    <script type="text/javascript" async 
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+</head>
+<body>
+    <header>
+        <a href="/SitesFísica/html/index.html" id="volte">
+            <img src="/SitesFísica/src/pngtree-arrow-left-flat-white-color-icon-move-back-less-photo-picture-image_7920547-removebg-preview.png" alt="Volta ao inicio" width="300" height="300">
+        </a>
+        <h1>Resolução - Circuitos Elétricos </h1>
+    </header>
+    
+    
+    <main id="texto">
+        <div class="section">
+            <h2>Circuito 1</h2>
+            <img src="/SitesFísica/src/circuito1.jpg" alt="Circuito 1" class="circuit-image">
+            <br>
+            <p>O objetivo é calcular a resistência equivalente \( R_{eq} \) entre os pontos A e B. Vamos analisar o circuito e identificar os agrupamentos de resistores.</p>
+
+            <h3>Passo 1: Resistores em Série</h3>
+            <p>O resistor de 5Ω e o resistor de 8Ω estão em série. A fórmula para resistores em série é dada por:</p>
+            <pre>R_s = R_1 + R_2 = 5Ω + 8Ω = 13Ω</pre>
+            <p>A resistência total dos resistores em série é \( R_s = 13Ω \).</p>
+
+            <h3>Passo 2: Bloco Intermediário</h3>
+            <p>No bloco intermediário, temos resistores de 10Ω, 20Ω, 30Ω e 60Ω. Vamos calcular a resistência total desse bloco, começando com a combinação dos resistores em série.</p>
+            <pre>R_1 = 10Ω + 20Ω = 30Ω</pre>
+
+            <h3>Passo 3: Resistores em Paralelo</h3>
+            <p>O \( R_1 = 30Ω \) está em paralelo com o resistor de 30Ω. A fórmula para resistores em paralelo é:</p>
+            <div class="formula">
+                \[
+                \frac{1}{R_2} = \frac{1}{30} + \frac{1}{30} = \frac{2}{30} \quad \Rightarrow \quad R_2 = 15Ω
+                \]
+            </div>
+
+            <h3>Passo 4: Resistor em Série com 60Ω</h3>
+            <p>O resistor \( R_2 = 15Ω \) está em série com o resistor de 60Ω:</p>
+            <pre>R_3 = 15Ω + 60Ω = 75Ω</pre>
+
+            <h3>Passo 5: Resistor em Paralelo com 25Ω</h3>
+            <p>Agora, \( R_3 = 75Ω \) está em paralelo com o resistor de 25Ω:</p>
+            <div class="formula">
+                \[
+                \frac{1}{R_4} = \frac{1}{75} + \frac{1}{25} = \frac{4}{75} \quad \Rightarrow \quad R_4 = 18.75Ω
+                \]
+            </div>
+
+            <h3>Passo 6: Resistores em Série</h3>
+            <p>Finalmente, as resistências \( R_s = 13Ω \) e \( R_4 = 18.75Ω \) estão em série com o resistor de 8Ω. A resistência equivalente \( R_{eq} \) é a soma dessas resistências:</p>
+            <pre>R_{eq} = 5Ω + 18.75Ω + 8Ω = 12.5Ω</pre>
+            <p><span class="highlight">Resultado: A resistência equivalente \( R_{eq} \) do Circuito 1 é 12.5Ω.</span></p>
+        </div>
+
+        <div class="section">
+            <h2>Circuito 2</h2>
+            <img src="/SitesFísica/src/circuito2.jpg" alt="Circuito 2" class="circuit-image">
+            <br>
+
+            <p>Agora vamos analisar o Circuito 2 e calcular a resistência equivalente \( R_{eq} \).</p>
+
+            <h3>Passo 1: Resistores em Série</h3>
+            <p>O resistor de 40Ω e o resistor de 10Ω estão em série:</p>
+            <pre>R_1 = 40Ω + 10Ω = 50Ω</pre>
+
+            <h3>Passo 2: Resistores em Série do Lado Direito</h3>
+            <p>O resistor de 10Ω e 20Ω do lado direito estão em série:</p>
+            <pre>R_2 = 10Ω + 20Ω = 30Ω</pre>
+
+            <h3>Passo 3: Resistores em Paralelo</h3>
+            <p>Agora, temos três resistores em paralelo: \( R_1 = 50Ω \), 40Ω e \( R_2 = 30Ω \). A fórmula para resistores em paralelo é:</p>
+            <div class="formula">
+                \[
+                \frac{1}{R_{eq}} = \frac{1}{50} + \frac{1}{40} + \frac{1}{30}
+                \]
+            </div>
+            <p>Calculando o mínimo múltiplo comum (MMC = 600), temos:</p>
+            <div class="formula">
+                \[
+                \frac{1}{R_{eq}} = \frac{12}{600} + \frac{15}{600} + \frac{20}{600} = \frac{47}{600} \quad \Rightarrow \quad R_{eq} = \frac{600}{47} \approx 20Ω
+                \]
+            </div>
+            <p><span class="highlight">Resultado: A resistência equivalente \( R_{eq} \) do Circuito 2 é 20Ω.</span></p>
+        </div>
+
+        <div class="section">
+            <h2>Cálculo da Potência Dissipada</h2>
+            <p>Agora que temos a resistência equivalente \( R_{eq} \) do Circuito 2, podemos calcular a potência dissipada. Sabemos que a potência total dissipada \( P \) é dada por:</p>
+            <pre>P = 2kW = 2000W</pre>
+            <p>Utilizamos a fórmula da potência \( P = \frac{V^2}{R} \) para calcular a tensão \( V \). Rearranjando a fórmula para \( V \):</p>
+            <pre>V^2 = P × R = 2000 × 20 = 40000</pre>
+            <p>Agora, calculamos a tensão:</p>
+            <pre>V = √40000 = 200V</pre>
+            <p><span class="highlight">Resultado: A tensão no circuito é \( V = 200V \), e a potência dissipada é \( P = 2kW \).</span></p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 | Unip - Ciência da Computação | Resolução de Circuitos</p>
+        <p>Developed by:</p>
+            <p></p>Eduardo Pereira Nunes de Oliveira<br>
+                Isabelle Natale<br>
+                Leonardo Limas Rosa<br>
+                Mario Henrique Batista<br>
+                Rian Guerra Ribeiro </p>
+    </footer>
+</body>
+</html>
