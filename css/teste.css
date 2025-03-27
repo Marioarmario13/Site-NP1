@@ -27,6 +27,7 @@ header {
 }
 
 .container {
+    flex: 1;
     max-width: 800px;
     width: 100%;
     margin: 80px auto;  /* Dá um espaço para o header fixo */
@@ -88,12 +89,14 @@ button:hover {
 
 footer {
     width: 100%;
-    padding: 20px;
+    padding: 40px;
     justify-content: center;
     align-items: center;
     background-color: #333333;
     color: #ccc;
     text-align: center;
+    margin-top: 40px;
+    
 }
 #volte {
     position: absolute;
