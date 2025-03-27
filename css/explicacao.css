@@ -20,18 +20,18 @@ header {
     top: 0;
     left: 0;
     z-index: 1000;
-    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    justify-content: center; 
     height: 75px;
 }
 
 #volte {
     position: absolute;
-    left: 10px; /* Distância da borda esquerda da tela */
-    margin-left: 10px; /* Espaço adicional entre o botão e a borda */
+    left: 10px;
+    margin-left: 10px; 
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 55px; /* Tamanho do botão */
+    width: 55px; 
     height: 55px;
     padding: 0;
     background-color: transparent;
@@ -50,7 +50,7 @@ header {
 h1 {
     margin: 0;
     font-size: 2.5em;
-    align-items: center; /* Espaço entre a imagem e o texto */
+    align-items: center;
     justify-content: center;
 }
 

@@ -31,15 +31,15 @@ header {
     cursor: pointer;
     text-align: center;
     font-weight: bold;
-    transition: all 0.3s ease; /* Adiciona transição suave para todas as propriedades */
+    transition: all 0.3s ease; 
 }
 
 #calcular:hover {
-    background-color: #0276c4; /* Cor verde neon */
+    background-color: #0276c4; 
     color: #000000;
     border-color: #000000;
-    transform: scale(1.1); /* Aumenta o tamanho do botão */
-    box-shadow: 0 0 10px #0276c4, 0 0 20px #0276c4, 0 0 30px #0276c4; /* Efeito neon */
+    transform: scale(1.1); 
+    box-shadow: 0 0 10px #0276c4, 0 0 20px #0276c4, 0 0 30px #0276c4; 
 }
 
 main { 
@@ -96,7 +96,7 @@ a:hover {
 
 footer {
     width: 100%;
-    padding: 20px 0; /* Ajuste conforme necessário */
+    padding: 20px 0; 
     background-color: #333333;
     color: #ccc;
     text-align: center;
